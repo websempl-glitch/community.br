@@ -1,0 +1,11 @@
+# Запрещаем Apache отдавать и исполнять любые скрипты из этой папки
+<FilesMatch "\.(php|phtml|php3|php4|php5|php7|php8|pl|py|jsp|asp|aspx|sh|cgi)$">
+    Require all denied
+</FilesMatch>
+
+# На всякий случай — снимаем любые обработчики для PHP
+RemoveHandler .php .phtml .php3 .php4 .php5 .php7 .php8
+RemoveType .php .phtml .php3 .php4 .php5 .php7 .php8
+
+# Отключаем листинг директорий
+Options -Indexes

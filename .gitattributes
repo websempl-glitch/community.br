@@ -1,0 +1,25 @@
+# Всегда LF в репозитории (кроссплатформенность)
+* text=auto eol=lf
+
+# Бинарники не трогаем
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+
+# PHP, JS, CSS, Markdown
+*.php text eol=lf
+*.js  text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md  text eol=lf
+*.sql text eol=lf
+*.json text eol=lf
+
+# Конфигурация
+*.htaccess text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf

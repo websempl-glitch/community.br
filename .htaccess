@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Существующие файлы и папки отдаём как есть
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+# Не даём скачать конфиг и логи
+<FilesMatch "\.(sql|log|env|md)$">
+    Require all denied
+</FilesMatch>

@@ -1,0 +1,33 @@
+# Локальная среда
+.osp/
+
+# Локальные конфиги (храните оригиналы только локально)
+config/config.php
+config/.env
+
+# Логи
+storage/logs/*
+!storage/logs/.htaccess
+
+# Загруженные файлы (аватары, обложки, картинки комментов)
+uploads/*
+!uploads/.htaccess
+
+# Дампы БД с данными (могут содержать пароли, email, токены)
+sql/*.sql
+!sql/schema.sql
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Кода/ИИ
+.koda/
+.claude/
